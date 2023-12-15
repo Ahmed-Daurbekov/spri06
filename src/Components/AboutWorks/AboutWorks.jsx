@@ -30,7 +30,7 @@ export const AboutWorks = () => {
       
       arr.push(newObj)
     }
-    return arr
+    return arr.reverse()
   }
 
   function searchWriters(e) {
