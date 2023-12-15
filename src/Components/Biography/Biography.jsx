@@ -28,11 +28,8 @@ const Biography = () => {
   React.useEffect(() => {
     axios.get(`https://dimpom-4d9fe-default-rtdb.firebaseio.com/works.json`)
       .then(d => {
-        if (flag) {
-          setLoader2(false)
-        }
         setWriterProjects(selectWriterProjects(d.data))
-        flag = true
+        setLoader2(false)
       })
   }, [biographyObj])
 
