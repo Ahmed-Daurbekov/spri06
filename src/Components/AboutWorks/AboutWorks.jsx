@@ -81,7 +81,7 @@ export const AboutWorks = () => {
           loader ? <Loader /> : <>
             <div className="about-works_items">
               {
-                filteredItems.reverse().map(obj => {
+                filteredItems.map(obj => {
                   return <WorkCard deleteCard={() => deleteCard(obj.id)} key={obj.id} obj={obj} />
                 })
               }
