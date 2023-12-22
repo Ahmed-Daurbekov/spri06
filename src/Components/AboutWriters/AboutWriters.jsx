@@ -82,7 +82,7 @@ export const AboutWriters = () => {
         loader ? <Loader /> : <>
           <div className="about-writers_items">
             {
-              filteredItems.reverse().map(obj => {
+              filteredItems.map(obj => {
                 return <WritersCard deleteCard={() => deleteCard(obj.id)} key={obj.id} obj={obj} />
               })
             }
