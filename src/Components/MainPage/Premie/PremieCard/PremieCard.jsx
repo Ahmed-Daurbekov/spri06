@@ -10,7 +10,7 @@ const PremieCard = ({obj}) => {
       </div>
       <div className="premie-block_text-block">
         <p className="premie-block_text-block_title">{obj.description} - {obj.name}</p>
-        <span className="premie-block_text-block_date">Год: {obj.date}</span>
+{/*         <span className="premie-block_text-block_date">Год: {obj.date}</span> */}
       </div>
     </div>
   );
